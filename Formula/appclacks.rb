@@ -5,20 +5,20 @@
 class Appclacks < Formula
   desc ""
   homepage "https://appclacks.com"
-  version "0.13.0"
+  version "0.14.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/appclacks/cli/releases/download/v0.13.0/appclacks_0.13.0_darwin_arm64.tar.gz"
-      sha256 "426621b63ece70aada40ab7d2855ac5d55fb42a47112eead421493526585f12a"
+      url "https://github.com/appclacks/cli/releases/download/v0.14.0/appclacks_0.14.0_darwin_arm64.tar.gz"
+      sha256 "3f8a27e34e094088105b4e5f8932239697372e3ccd3f0cec76957179aeae26fd"
 
       def install
         bin.install "appclacks"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/appclacks/cli/releases/download/v0.13.0/appclacks_0.13.0_darwin_amd64.tar.gz"
-      sha256 "902e88de3dea8a7cfeac37c20d22b14de373193a2e97a512baae9fa8ea2a404a"
+      url "https://github.com/appclacks/cli/releases/download/v0.14.0/appclacks_0.14.0_darwin_amd64.tar.gz"
+      sha256 "2ece9607f603e6e15b89fb392a0905a4b25e72547549502bd364940354757289"
 
       def install
         bin.install "appclacks"
@@ -28,24 +28,24 @@ class Appclacks < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/appclacks/cli/releases/download/v0.13.0/appclacks_0.13.0_linux_armv6.tar.gz"
-      sha256 "5f1657cbbb59124675dff571e2d4753a935b6bc6ae9fbcde9c5e45e43bb960b2"
+      url "https://github.com/appclacks/cli/releases/download/v0.14.0/appclacks_0.14.0_linux_armv6.tar.gz"
+      sha256 "a529658b09c0b3b08577e9f6276f6c0e38d6879906ee40b06057a456b7f29975"
 
       def install
         bin.install "appclacks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/appclacks/cli/releases/download/v0.13.0/appclacks_0.13.0_linux_arm64.tar.gz"
-      sha256 "2138dc1b55f3447f914552075751b48345f58355fd2bbd9c70147a155cadf093"
+      url "https://github.com/appclacks/cli/releases/download/v0.14.0/appclacks_0.14.0_linux_arm64.tar.gz"
+      sha256 "13cf1ea39d560d37d6937383bc681fb6d80877702aae42fda85ca655037aaed4"
 
       def install
         bin.install "appclacks"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/appclacks/cli/releases/download/v0.13.0/appclacks_0.13.0_linux_amd64.tar.gz"
-      sha256 "dc4b521de4e0740d57e263f42d80b5f5a2eca52e5686fe1b098e872832949c14"
+      url "https://github.com/appclacks/cli/releases/download/v0.14.0/appclacks_0.14.0_linux_amd64.tar.gz"
+      sha256 "6810ff707039187e53d5406acb504983a7d78c95be6e52b880bd0b9e8d7f20b9"
 
       def install
         bin.install "appclacks"
